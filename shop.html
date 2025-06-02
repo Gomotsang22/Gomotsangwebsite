@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - StepStyle Footwear</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Step<span>Style</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop-header">
+        <div class="shop-header-content">
+            <h1>Our Collection</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="shop-container">
+        <div class="filter-section">
+            <div class="filter-options">
+                <div class="filter-dropdown">
+                    <button class="filter-btn">
+                        Category <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" class="filter-option" data-filter="all">All Shoes</a>
+                        <a href="#" class="filter-option" data-filter="sneakers">Sneakers</a>
+                        <a href="#" class="filter-option" data-filter="running">Running</a>
+                        <a href="#" class="filter-option" data-filter="casual">Casual</a>
+                        <a href="#" class="filter-option" data-filter="formal">Formal</a>
+                        <a href="#" class="filter-option" data-filter="sandals">Sandals</a>
+                    </div>
+                </div>
+                <div class="filter-dropdown">
+                    <button class="filter-btn">
+                        Size <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">All Sizes</a>
+                        <a href="#">US 5-6</a>
+                        <a href="#">US 7-8</a>
+                        <a href="#">US 9-10</a>
+                        <a href="#">US 11-12</a>
+                        <a href="#">US 13+</a>
+                    </div>
+                </div>
+                <div class="filter-dropdown">
+                    <button class="filter-btn">
+                        Brand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" class="brand-filter" data-brand="all">All Brands</a>
+                        <a href="#" class="brand-filter" data-brand="nike">Nike</a>
+                        <a href="#" class="brand-filter" data-brand="adidas">Adidas</a>
+                        <a href="#" class="brand-filter" data-brand="puma">Puma</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sort-options">
+                <span>Sort by:</span>
+                <select>
+                    <option>Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest Arrivals</option>
+                    <option>Best Selling</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Nike Products -->
+            <div class="product-card" data-brand="nike" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://i5.walmartimages.com/seo/Nike-Air-Max-270-AH6789-100-Sneaker-Women-US-6-White-Low-Top-Running-Shoes-X828_7c5833c2-a96f-4298-858b-c4fbb2fe3d29.e4871408815f07433c61217dbcb4d268.jpeg" alt="Nike Air Max">
+                    <span class="product-badge">New</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Air Max 270</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 150.00</span>
+                        <span class="original-price">P1, 680.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-brand="nike" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://sa-sneakers.ch/cdn/shop/files/Jordan-1-Mid-Light-Smoke-Grey-Anthracite_-SA-Sneakers-138613725.jpg?v=1702715674&width=2000" alt="Nike Jordan">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Air Jordan 1 Mid</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1,915.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-brand="nike" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/f0e20192-0140-4f40-876b-ebe1e5368ceb/NIKE+DUNK+LOW+%28PSE%29.png" alt="Nike Jordan">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Dunk Low</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1,115.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="nike" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/81EKjXtn2DL._AC_UY1000_.jpg" alt="Nike Jordan">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Nike Blazer</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1,315.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Adidas Products -->
+            <div class="product-card" data-brand="adidas" data-category="running">
+                <div class="product-image">
+                    <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/576929_v2.jpg" alt="Adidas Ultraboost">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Ultraboost 21</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 380.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-brand="adidas" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/8943df93a9e94f81adb7af63011856c7_9366/Campus_00s_Shoes_Black_HQ6638_01_standard.jpg" alt="Adidas Sneakers">
+                    <span class="product-badge">Luxury</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Adidas Campus</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 790.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="adidas" data-category="running">
+                <div class="product-image">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b29bc145fc1c499b9af9504c3afac101_9366/Galaxy_7_Running_Shoes_Black_ID8765_HM1.jpg" alt="Adidas Sneakers">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Gallaxy 7</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 390.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="adidas" data-category="running">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/610k7umwL6L._AC_UY1000_.jpg" alt="Adidas runavatar">
+                    <span class="product-badge">Luxury</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">RunAvatar</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 190.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+                   <!-- puma products -->
+             <div class="product-card" data-brand="puma" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://www.tradeinn.com/f/13700/137003896/puma-rs-x-toys-trainers.jpg" alt="Puma RS-X">
+                    <span class="product-badge">Sale</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">RS-X Toys</h3>
+                    <div class="product-price">
+                        <span class="current-price">P789.99</span>
+                        <span class="original-price">P920.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-brand="puma" data-category="casual">
+                <div class="product-image">
+                    <img src="https://img.pacifiko.com/PROD/resize/1/500x500/MGY0ODQ5YT.jpg" alt="Puma Suede">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">Suede</h3>
+                    <div class="product-price">
+                        <span class="current-price">P460.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="puma" data-category="casual">
+                <div class="product-image">
+                    <img src="https://www.golfposer.com/media/magefan_blog/puma-rs-g-golf-shoes-white-blue-navy-emag-2021.jpg" alt="Puma RS-G">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">RS-G</h3>
+                    <div class="product-price">
+                        <span class="current-price">P890.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="puma" data-category="running">
+                <div class="product-image">
+                    <img src="https://i.sportisimo.com/products/images/1859/1859116/700x700/puma-enzo-2-refresh-jr_2.jpg" alt="Puma Enzo 5">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">Enzo 5</h3>
+                    <div class="product-price">
+                        <span class="current-price">P660.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-brand="puma" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://s3.us-east-1.amazonaws.com/vnda-cockpit/www-streetopia-me/2022/06/17/62ac8aa1662d2puma03.jpg" alt="Puma Slipstream">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">Slipstream</h3>
+                    <div class="product-price">
+                        <span class="current-price">P9990.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Additional Products -->
+            <div class="product-card" data-brand="nike" data-category="running">
+                <div class="product-image">
+                    <img src="https://cdn.fleetfeet.com/a:2.4-f:cover-w:1440/assets/2021_NIKE_PEGASUS_38_MENS_12.jpg?s=edc9c648" alt="Nike Running">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Pegasus 38</h3>
+                    <div class="product-price">
+                        <span class="current-price">P1, 120.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-brand="adidas" data-category="sneakers">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/81kRbidVChL._AC_SL1500_.jpg" alt="Adidas Superstar">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Superstar</h3>
+                    <div class="product-price">
+                        <span class="current-price">P685.00</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2023 StepStyle Footwear Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle dropdown menus
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const dropdown = this.closest('.filter-dropdown');
+                dropdown.classList.toggle('active');
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.filter-dropdown')) {
+                document.querySelectorAll('.filter-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Brand filtering functionality
+        document.querySelectorAll('.brand-filter').forEach(filter => {
+            filter.addEventListener('click', function(e) {
+                e.preventDefault();
+                const brand = this.getAttribute('data-brand');
+                filterProducts(brand);
+            });
+        });
+
+        function filterProducts(brand) {
+            const products = document.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const productBrand = product.getAttribute('data-brand');
+                
+                if (brand === 'all' || productBrand === brand) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Category filtering functionality
+        document.querySelectorAll('.filter-option').forEach(filter => {
+            filter.addEventListener('click', function(e) {
+                e.preventDefault();
+                const category = this.getAttribute('data-filter');
+                filterByCategory(category);
+            });
+        });
+
+        function filterByCategory(category) {
+            const products = document.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const productCategory = product.getAttribute('data-category');
+                
+                if (category === 'all' || productCategory === category) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

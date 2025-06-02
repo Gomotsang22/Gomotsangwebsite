@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale - StepStyle Footwear</title>
+    <link rel="stylesheet" href="sale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Step<span>Style</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li><a href="sale.html" class="active">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sale-header">
+        <div class="sale-header-content">
+            <span class="sale-tag">UP TO 50% OFF</span>
+            <h1>End of Season Sale</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="sale.html">Sale</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="sale-container">
+        <h2 class="section-title">Limited Time Offers</h2>
+        
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">20</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">12</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">45</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">30</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+
+        <div class="sale-grid">
+            <!-- Product 1 -->
+            <div class="sale-card hot-deal">
+                <span class="sale-badge">HOT DEAL</span>
+                <div class="sale-image">
+                    <img src="https://i5.walmartimages.com/seo/Nike-Air-Max-270-AH6789-100-Sneaker-Women-US-6-White-Low-Top-Running-Shoes-X828_7c5833c2-a96f-4298-858b-c4fbb2fe3d29.e4871408815f07433c61217dbcb4d268.jpeg" alt="Nike Air Max">
+                </div>
+                <div class="sale-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Air Max 270</h3>
+                    <div class="price-container">
+                        <span class="current-price">P1,200.00</span>
+                        <span class="original-price">P1,600.00</span>
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="sale-card hot-deal">
+                <span class="sale-badge">HOT DEAL</span>
+                <div class="sale-image">
+                    <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/576929_v2.jpg" alt="Adidas Ultraboost">
+                </div>
+                <div class="sale-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Ultraboost 21</h3>
+                    <div class="price-container">
+                        <span class="current-price">P1,500.00</span>
+                        <span class="original-price">P1,800.00</span>
+                        <span class="discount">8% OFF</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="sale-card">
+                <span class="sale-badge">SALE</span>
+                <div class="sale-image">
+                    <img src="https://www.tradeinn.com/f/13700/137003896/puma-rs-x-toys-trainers.jpg" alt="Puma RS-X">
+                </div>
+                <div class="sale-info">
+                    <p class="product-brand">Puma</p>
+                    <h3 class="product-name">RS-X Toys</h3>
+                    <div class="price-container">
+                        <span class="current-price">P1,800.00</span>
+                        <span class="original-price">P2,100.00</span>
+                        <span class="discount">13% OFF</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="sale-card">
+                <span class="sale-badge">SALE</span>
+                <div class="sale-image">
+                    <img src="https://sa-sneakers.ch/cdn/shop/files/Jordan-1-Mid-Light-Smoke-Grey-Anthracite_-SA-Sneakers-138613725.jpg?v=1702715674&width=2000" alt="Nike Jordan">
+                </div>
+                <div class="sale-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Air Jordan 1 Mid</h3>
+                    <div class="price-container">
+                        <span class="current-price">P1,200.00</span>
+                        <span class="original-price">P1,500.00</span>
+                        <span class="discount">9% OFF</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2023 StepStyle Footwear Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const saleEnd = new Date();
+            saleEnd.setDate(now.getDate() + 20); // Sale ends in 20 days
+            saleEnd.setHours(23, 59, 59, 0);
+
+            const diff = saleEnd - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+</html>

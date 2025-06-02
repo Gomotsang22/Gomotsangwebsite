@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands - StepStyle Footwear</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Step<span>Style</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="brand.html" class="active">Brands</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="brands-header">
+        <div class="brands-header-content">
+            <h1>Our Brands</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="brands.html">Brands</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="brands-container">
+        <section class="featured-brands">
+            <h2 class="section-title">Featured Brands</h2>
+            <div class="brands-grid">
+                <!-- Nike -->
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://img.icons8.com/?size=100&id=AfOSgf5E2HmK&format=png&color=000000" alt="Nike">
+                    </div>
+                    <h3 class="brand-name">Nike</h3>
+                    <p class="brand-description">Just Do It. World's leading athletic footwear brand known for innovation and performance.</p>
+                    <a href="shop.html?brand=nike" class="view-collection">View Collection</a>
+                </div>
+
+                <!-- Adidas -->
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://img.icons8.com/?size=100&id=GfKXDf7zz8xQ&format=png&color=000000" alt="Adidas">
+                    </div>
+                    <h3 class="brand-name">Adidas</h3>
+                    <p class="brand-description">Impossible is Nothing. German sportswear giant with iconic three-stripe designs.</p>
+                    <a href="shop.html?brand=adidas" class="view-collection">View Collection</a>
+                </div>
+
+                <!-- Puma -->
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/puma.com" alt="Puma">
+                    </div>
+                    <h3 class="brand-name">Puma</h3>
+                    <p class="brand-description">Forever Faster. Combines sports and streetwear with bold, contemporary designs.</p>
+                    <a href="shop.html?brand=puma" class="view-collection">View Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-categories">
+            <h2 class="section-title">Browse By Category</h2>
+            <div class="category-tabs">
+                <div class="category-tab active" data-category="all">All Brands</div>
+                <div class="category-tab" data-category="sport">Sport</div>
+                <div class="category-tab" data-category="luxury">Luxury</div>
+                <div class="category-tab" data-category="streetwear">Streetwear</div>
+                <div class="category-tab" data-category="running">Running</div>
+            </div>
+            <div class="brands-grid">
+                <!-- These would be filtered by the category tabs -->
+                <div class="brand-card" data-category="sport">
+                    <div class="brand-logo">
+                        <img src="https://img.icons8.com/?size=100&id=AfOSgf5E2HmK&format=png&color=000000" alt="Nike">
+                    </div>
+                    <h3 class="brand-name">Nike</h3>
+                    <p class="brand-description">Just Do It. World's leading athletic footwear brand known for innovation and performance.</p>
+                    <a href="shop.html?brand=nike" class="view-collection">View Collection</a>
+                </div>
+
+                <div class="brand-card" data-category="sport">
+                    <div class="brand-logo">
+                        <img src="https://img.icons8.com/?size=100&id=GfKXDf7zz8xQ&format=png&color=000000" alt="Adidas">
+                    </div>
+                    <h3 class="brand-name">Adidas</h3>
+                    <p class="brand-description">Impossible is Nothing. German sportswear giant with iconic three-stripe designs.</p>
+                    <a href="shop.html?brand=adidas" class="view-collection">View Collection</a>
+                </div>
+
+                <div class="brand-card" data-category="streetwear">
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/puma.com" alt="Puma">
+                    </div>
+                    <h3 class="brand-name">Puma</h3>
+                    <p class="brand-description">Forever Faster. Combines sports and streetwear with bold, contemporary designs.</p>
+                    <a href="shop.html?brand=puma" class="view-collection">View Collection</a>
+                </div>
+
+               
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2023 StepStyle Footwear Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Category filtering functionality
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.category-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                filterBrandsByCategory(category);
+            });
+        });
+
+        function filterBrandsByCategory(category) {
+            const brands = document.querySelectorAll('.brand-categories .brand-card');
+            
+            brands.forEach(brand => {
+                const brandCategory = brand.getAttribute('data-category');
+                
+                if (category === 'all' || brandCategory === category) {
+                    brand.style.display = 'block';
+                } else {
+                    brand.style.display = 'none';
+                }
+            });
+        }
+
+        // If a brand is specified in the URL, scroll to it
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const brandParam = urlParams.get('brand');
+            
+            if (brandParam) {
+                const brandCard = document.querySelector(`.brand-card [data-brand="${brandParam}"]`);
+                if (brandCard) {
+                    brandCard.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
